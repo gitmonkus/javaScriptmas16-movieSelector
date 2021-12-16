@@ -1,0 +1,159 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--dark-green);
+    background: url(img/popcorn.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255,.7);
+    box-shadow: 2px 2px 20px var(--snow);
+    padding: 40px;
+    position: relative;
+}
+
+.movie-display {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    min-width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position: relative;
+}
+
+h1,
+h2 { 
+    margin-bottom: 0;
+    text-shadow: 2px 2px 1px var(--snow);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+img {
+    width: 300px;
+    height: 400px;
+}
+
+.greatness {
+    color: var(--bright-red);
+}
+
+.suggested-movie {
+    color: var(--snow);
+    font-size: 30px;
+}
+
+.rated {
+    position: absolute;
+    background: var(--snow);
+    bottom: 3%;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--dark-green);
+    padding: 5px;
+    width: 74%
+}
+.rating {
+    color: var(--bright-red);
+    font-size: 30px;
+    text-shadow: 2px 2px 10px var(--gold); 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+form * {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;    
+    font-size: 30px;    
+    margin: 0.25em; 
+}
+
+select {
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border: 3px solid var(--light-green);
+    border-radius: 5px;
+    padding: 0.2em 0.3em;
+    color: var(--light-green);    
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    outline: none;
+
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: var(--light-green);    
+    color: var(--snow);
+    border-radius: 999px;
+    font-family: inherit;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover,
+button:focus {
+    background: var(--bright-red);
+    box-shadow: 2px 2px 20px var(--snow);
+    cursor: pointer;
+    transform: scale(1.03);
+    outline: none;
+}
+
+.play-clip {
+    background: var(--snow);
+    color: var(--bright-red);
+    border: 2px dashed var(--bright-red);
+    position: absolute;
+    bottom: 30%;
+    right: -12%;
+    height: 90px;
+    padding: 10px;
+    border-radius: 0;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+.play-clip:hover,
+.play-clip:focus {
+    box-shadow: 2px 2px 20px var(--snow);
+    transform: rotate(25deg);
+    outline: none;
+    background: var(--snow);
+    color: var(--bright-red);
+    border: 2px dashed var(--bright-red);
+}

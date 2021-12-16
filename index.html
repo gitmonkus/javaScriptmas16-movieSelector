@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-container">
+        <div><button id="play-clip" class="play-clip">Play Audio Clip</button></div>
+        <h1>🎄 Christmas Movie Selector 📺</h1>
+        <h2>of <span class="greatness">GREATNESS!</span></h2>
+        <div class="movie-display">
+            <p id="suggested-movie" class="suggested-movie"><img src="img/curtan.jpg" alt="theater curtans"></p>
+            <p class="rated">Rated: <span id="rating" class="rating"></span></p>
+        </div>
+        <form>
+            <select id="age-selector">
+                <option value="18+">18+</option>
+                <option value="PG">PG</option>
+            </select>
+            <select id="genre-selector">
+                <option value="Action">Action</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+            <button id="btn" type="button">Select a movie</button>
+        </form>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
